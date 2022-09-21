@@ -1,0 +1,27 @@
+<%- include('head') %>
+<body onload="indexOwnPosts()" class="text-gray-800 bg-gray-200" style="font-family: 'Source Sans Pro', sans-serif"></body>
+<%- include('nav') %>
+
+
+<div class="flex flex-col items-center">
+    <p>Welcome, <strong> <%= user_name %> </strong></p>
+    <p>Edit and delete your posts here</p>
+
+    <br>
+
+    <% if (two_factor_enabled === true) { %>
+
+        <p>Two factor authentication is <strong>enabled!</strong>!</p>
+        <a class="px-4 font-bold" href="/turn_off_twofa">Turn Off</a>
+    <% } else{ %>
+        <p>Two factor authentication is <strong>disabled</strong>!</p>
+        <a class="px-4 font-bold" href="/turn_on_twofa">Turn On</a>
+    <% } %>
+
+    <br>
+
+</div>
+
+<div id="postwrapper" class="flex flex-col items-center">
+
+</div>

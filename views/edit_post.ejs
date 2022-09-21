@@ -1,0 +1,80 @@
+<%- include('head') %>
+
+<%- include('nav') %>
+
+
+
+<h1 class="text-center text-4xl font-bold mb-6"><%= title %></h1>
+
+    
+<div id="formWrapper">
+  <form action="" class="w-full flex flex-col justify-center" >
+        <div class="w-full  flex justify-center">
+          <% for (x in data) {  %>
+            <% let u = data[x]; %>
+                  <label for="title"></label>
+                  <input class="text-center appearance-none border-2 border-gray-200 rounded w-1/3 h-12 py-2 px-4 text-gray-700 flex justify-center focus:outline-none 
+                  focus:border-indigo-300" id="title" type="text" value="<%= `${u.title}` %>" placeholder="Your Title"> 
+                </div>
+ 
+                <div class="w-full  flex justify-center">
+                    <textarea name="post" id="text" class="w-2/3 h-96 p-2 rounded focus:outline-none focus:ring focus:border-indigo-300">
+
+
+
+                          <%= `${u.post}` %>
+
+   
+
+                    </textarea>
+                    <div style="display: none;">
+                      <select name="id" id="idHidden" >
+                        <option value="<%= `${u.id}` %>"></option>
+                      </select>
+
+                    <!-- <input value="<%= `${u.id}` %>" id="postID" class="hidden"> -->
+                  </div>
+
+                </div>
+                <div class=" flex justify-center ">
+                  <div class=" flex justify-center ">
+                    <input  onclick="onDelete()" value="Delete" id="deletePost" class="bg-indigo-300 w-2/3 h-10 p-2 m-1 rounded hover:bg-indigo-400">
+
+                      <input  onclick="onSubmitEdit()" value="Save Changes" id="editPost" class="bg-indigo-300 w-2/3 h-10 p-2 m-1 rounded hover:bg-indigo-400">
+                </div>
+                <% } %>
+                </div>
+
+    </form>
+
+  </div>
+
+  <div id="deleteConfirm" style="display:none;" class="w-full flex items-center m-12 text-lg"> Post Deleted</div>
+  <div id="editConfirm" style="display:none;" class="w-full flex items-center m-12 text-lg"> Post Sucessfully Edited</div>
+
+
+  <!-- 
+    <div id="newEventModal" class="hidden z-20 p-6 bg-indigo-100 rounded absolute">
+      <h2>New Event</h2>
+
+      <input id="eventTitleInput" placeholder="Event Title" class="p-2 w-full box-border mb-6 rounded-sm"/>
+      
+
+      <button id="saveButton" class="bg-gray-500 w-20 cursor-pointer p-1 rounded text-white">Save</button>
+      <button id="cancelButton" class="bg-red-500 w-20 cursor-pointer p-1 rounded text-white">Cancel</button>
+    </div> -->
+
+    <!-- <div id="modalBackDrop" class="hidden top-0 left-0 z-10 w-screen h-screen absolute"></div> -->
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+</body>
+</html>

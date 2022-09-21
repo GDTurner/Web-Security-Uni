@@ -1,0 +1,31 @@
+<!-- Run this in the terminal to make tailwind work properly -       npx tailwindcss -i ./input.css -o ./public/css/style.css --watch          -->
+
+<%- include('head') %>
+<%- include('nav_unauth') %>
+
+    <div class="w-full h-screen flex justify-center">
+        <!-- add in the form actions -->
+            <form action="/login_form" method = "POST" class="w-1/4 h-3/5 p-12 rounded-lg bg-indigo-500 ">
+                <div class="w-full h-full px-4 rounded border-2  bg-indigo-200">
+                    <div>
+                        <label class="block mb-2 mt-12 text-indigo-500 text-center" for="username">Email</label>
+                        <input class="w-full p-2 mb-12  text-indigo-700 rounded border-b-2 border-indigo-500 outline-none focus:rounded focus:outline-indigo-400" 
+                        type="email" name="email" id="email" pattern="[^()/><\][\\\x22,;|]+" title="The following characters are not permitted: ( ) / > < ] [ \ &apos; &quot; , ; | "required>
+                    </div>
+                <div>
+                    <label class="block mb-2 text-indigo-500 text-center" for="password">Password</label>
+                    <input class="w-full p-2 mb-12 text-indigo-700 rounded border-b-2 border-indigo-500 outline-none focus:rounded focus:outline-indigo-400" type="password" 
+                    name="password" id="password" pattern="[^()/><\][\\\x22,;|]+" title="The following characters are not permitted: ( ) / > < ] [ \ &apos; &quot; , ; | " required>
+                </div>
+                    <div>          
+                        <input class="w-full bg-indigo-700 hover:bg-pink-700 text-white font-bold py-2 px-4 mb-6 rounded" type="submit">
+                    </div> 
+                        <div class="text-center">
+                            <a href="create_acc" class="text-gray-500 decoration-solid "> Create Account</a>
+                        </div>
+                </div>      
+            </form>
+    </div>
+
+</body>
+</html>

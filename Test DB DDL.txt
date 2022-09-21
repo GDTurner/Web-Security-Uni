@@ -1,0 +1,13 @@
+-- SET SEARCH_PATH TO blogtest;
+
+-- CREATE TABLE blog_posts (
+-- id INT NOT NULL PRIMARY KEY GENERATED ALWAYS AS IDENTITY (START WITH 10000),
+-- title VARCHAR(300),
+-- post TEXT,
+-- created_at TIMESTAMP NOT NULL DEFAULT NOW()
+
+-- );
+
+SELECT * FROM blog_posts;
+
+SELECT * FROM blog_posts WHERE id = '10000';

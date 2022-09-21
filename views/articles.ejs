@@ -1,0 +1,15 @@
+
+
+  <div class="flex flex-col items-center">
+    <% for (x in data) {  %>
+    <% let u = data[x]; %>
+    <div class="content bg-blue-500 border-2 border-red-500 no-underline w-3/5 max-h-44 p-4 m-4 rounded-xl "><a href="/linktest/<%= `${u.id}` %>">
+      <p class="text-center text-2xl font-bold"><%= `${u.title}` %></p>
+      <p class="  line-clamp-3"><%= `${u.post}` %></p>
+      <br>
+      <p class="text-right text-sm "><%= `${u.created_at}` %></p>
+    </a>
+  </div>
+    <% } %>
+  </ul>
+</div>

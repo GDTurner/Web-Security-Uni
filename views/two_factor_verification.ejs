@@ -1,0 +1,24 @@
+<!-- Run this in the terminal to make tailwind work properly -       npx tailwindcss -i ./input.css -o ./public/css/style.css --watch          -->
+
+<%- include('head') %>
+<%- include('nav_unauth') %>
+
+    <div class="w-full h-screen flex justify-center">
+        <!-- add in the form actions -->
+            <form action="/enter_code" method = "POST" class="w-1/4 h-3/5 p-12 rounded-lg bg-indigo-500 ">
+
+                <div class="w-full h-full px-4 rounded border-2  bg-indigo-200">
+                    <p>Please enter the code sent to your email address to verify your account!</p>
+                    <div>
+                        <label class="block mb-2 mt-12 text-indigo-500 text-center" for="code">Code: </label>
+                        <input class="w-full p-2 mb-12  text-indigo-700 rounded border-b-2 border-indigo-500 outline-none focus:rounded focus:outline-indigo-400" type="text" name="code" id="code" required>
+                    </div>
+                    <div>          
+                        <input class="w-full bg-indigo-700 hover:bg-pink-700 text-white font-bold py-2 px-4 mb-6 rounded" type="submit" onclick="onCodeSubmit()">
+                    </div>
+                </div>      
+            </form>
+    </div>
+
+</body>
+</html>
