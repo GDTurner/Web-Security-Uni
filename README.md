@@ -1,6 +1,6 @@
 # DSSBlog
 A small blog system designed to be secure against a range of threats such as account enumeration, SQL injection and cross-site scripting.
-Written by PGT12.
+Written by PGT12. Created as the primary coursework for MSc Computing Science Module 'Developing Secure Applications'.
 
 https://tailwindcss.com/docs/installation
 - Template paths are already configured providing you use the tailwind.config.js file in the repo.
