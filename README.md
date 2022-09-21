@@ -87,7 +87,6 @@ The error is to do with having an older version of Node.js and npm installed.
 Look [here](https://github.com/npm/cli/issues/681#issuecomment-793916156) for more information. 
 
 ## Git Guide
-Here is a quick guide for you guys so that you can upload / implement your changes to the repository:
 
 Download and install git to your machines. It can be found [here](https://git-scm.com/downloads). You can install with the default settings.
 Once installed, open the git bash program. Some useful commands:
@@ -96,7 +95,7 @@ Once installed, open the git bash program. Some useful commands:
 - `cd ..` - move up one directory (so from `/dir1/dir2/dir3` to `dir1/dir2`)
 
 Git specific stuff:
-- `git clone https://github.com/GDTurner/DSSBlog.git` - make a local copy of the repository on your computer
+- `git clone https://github.com/GDTurner/Web-Security-Uni.git` - make a local copy of the repository on your computer
 - `git pull` - when you are in the repository directory, run this command to pull any changes made from the github repo to your local repo
 
 You can imagine git as a snapshot tracker - it saves snapshots of files exactly as they are, so that you can move between versions / files are backed up. 
@@ -108,33 +107,5 @@ Once you have made changes and would like to share them
 - `git push` - push you changes to the online repo so that we can all download them locally
 
 If you can push because you do not have local changes, pull first then push once you have committed. 
-
-
-## Task Breakdown - Engagement Report
-
-Sam:
-- CSRF
-- Authentication
-- Salt/Hashing
-- Report
-
-Holly:
-- SQL injection
-- Account Enumeration
-- Report
-- Testing
-
-Chris:
-- Salting/Hashing
-- Authentication
-- Database
-- Report
-
-Guy:
-- Cross site scripting
-- Node routing
-- Frontend css/js
-- Report
-
 
 
